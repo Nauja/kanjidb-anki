@@ -7,3 +7,11 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Nauja/kanjidb-anki/issues)
 
 Collection of Anki plugins for [KanjiDB](https://github.com/Nauja/kanjidb).
+
+# Install
+
+Using pip:
+
+```bash
+> pip install kanjidb-anki
+```
