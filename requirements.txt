@@ -1,2 +1,2 @@
-kanjidb
+kanjidb==0.1a1
 genanki

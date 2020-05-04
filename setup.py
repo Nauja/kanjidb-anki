@@ -39,7 +39,7 @@ setup(
     entry_points={
         "kanjidb.builder.plugins": "ankideck = kanjidb_anki.builder.plugins.ankideck"
     },
-    install_requires=["kanjidb", "genanki"],
+    install_requires=["kanjidb==0.1a1", "genanki"],
     test_suite="test",
     tests_require=["nose", "nose-cover3"],
     include_package_data=True,
