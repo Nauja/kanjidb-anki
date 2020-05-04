@@ -41,9 +41,15 @@ run:
 ```
 
 Steps are:
-  * `kanjistream`: read kanjis (one per line) from `kanjis.txt` file.
+  * `kanjistream`: read kanjis separated by `;` character from `kanjis.txt` file.
   * `kanjidic2`: create a JSON dict with kanjis data from Kanjidic2 XML file.
   * `ankideck`: generate an Anki deck.
+
+Create a file called `kanjis.txt` that will contain kanjis to include in deck:
+
+```
+一;二;三
+```
 
 Now run following command:
 
