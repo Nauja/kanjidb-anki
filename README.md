@@ -15,3 +15,40 @@ Using pip:
 ```bash
 > pip install kanjidb-anki
 ```
+
+# Generate Anki decks
+
+Create the following `config.yml` file:
+
+```yaml
+run:
+- kanjistream:
+    encoding: utf8
+    separator: ";"
+    in:
+    - kanjis.txt
+    out: kanjis
+- kanjidic2:
+    kd2_file: kanjidic2.xml
+    in: kanjis
+    out: db
+- ankideck:
+    in: db
+    generate: kanjis
+    out: ankideck.apkg
+    deck_id: 1
+    title: Generated Deck
+```
+
+Steps are:
+  * `kanjistream`: read kanjis (one per line) from `kanjis.txt` file.
+  * `kanjidic2`: create a JSON dict with kanjis data from Kanjidic2 XML file.
+  * `ankideck`: generate an Anki deck.
+
+Now run following command:
+
+```bash
+> python -m kanjidb config.yml
+```
+
+This will generate an Anki deck for all kanjis listed in `kanjis.txt`.
