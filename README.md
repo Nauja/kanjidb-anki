@@ -57,4 +57,4 @@ Now run following command:
 > python -m kanjidb config.yml
 ```
 
-This will generate an Anki deck for all kanjis listed in `kanjis.txt`.
+This will generate an Anki deck containing all kanjis listed in `kanjis.txt`.
